@@ -30,7 +30,7 @@ const PORT = 3000;
 app.use(express.json());
 
 const authRouter = require("./router/auth");
-app.use("/",  authRouter);
+app.use("/", authRouter);
 
 // app.get("/", (req, res) => {
 //   res.send("Hello Home page 1");

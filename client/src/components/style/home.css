@@ -1,0 +1,136 @@
+.hero {
+  height: 600px;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.heroContent {
+  width: 500px;
+}
+
+.heroTitle {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Cinzel", serif;
+}
+
+/* Button css part  */
+.heroBtn {
+  margin-top: 20px;
+  background: transparent;
+  padding: 10px 15px;
+}
+
+.heroBtn:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.799);
+  color: white;
+}
+
+/* image modifiaction  */
+.heroImg {
+  height: 350px;
+}
+
+.heroimage {
+  position: relative;
+}
+
+.heroImg:first-child {
+  z-index: 1;
+  transform: rotate(28deg);
+}
+
+.heroImg:nth-child(2) {
+  position: absolute;
+  top: -50px;
+  left: 210px; /* Adjust this value to your preference for the overlap. */
+  z-index: 2;
+  transform: rotate(30deg);
+}
+
+/* section one starts here ----------- */
+.one {
+  margin: 50px 0 100px 0;
+  display: grid;
+  place-items: center;
+  height: 100px;
+}
+
+.oneItems {
+  display: flex;
+  gap: 20px;
+}
+
+.oneItem {
+  border: 1px solid rgba(0, 0, 0, 0.212);
+  padding: 40px 50px;
+}
+
+/* Trending section starts here ----------- */
+
+.trending {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.trenTitle {
+  font-size: 60px;
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+}
+
+.line {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 20px 0 50px 0;
+}
+.lineline {
+  border-top: 2px solid black;
+  width: 50px;
+}
+
+.trenProducts {
+  display: flex;
+  justify-content: center;
+}
+
+.trenProduct {
+  padding: 20px;
+  height: 430px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 20px;
+}
+
+.namePrice{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.trenImgs{
+  background-color: antiquewhite;
+  height: 380px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trenImg {
+  width: 200px;
+}
+
+.trenImg:hover{
+  position: absolute;
+  z-index: 1;
+  width: 450px;
+}
