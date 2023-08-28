@@ -7,11 +7,14 @@ const centerTextStyle = {
 
 const Footer = () => {
   return (
-    <footer style={centerTextStyle}>
-      <p>
-        &copy; {new Date().getFullYear()} SUBRATH SAPKOTA. All rights reserved.
-      </p>
-    </footer>
+    <>
+      <footer style={centerTextStyle}>
+        <p>
+          &copy; {new Date().getFullYear()} SUBRATH SAPKOTA. All rights
+          reserved.
+        </p>
+      </footer>
+    </>
   );
 };
 

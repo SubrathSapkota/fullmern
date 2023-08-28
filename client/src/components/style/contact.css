@@ -1,0 +1,64 @@
+.mainContact{
+  margin-top: 50px;
+  height: 100vh;
+}
+
+.contactFormFull {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+}
+
+.heroContactTitle {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Cinzel", serif;
+}
+
+.contactForm{
+  margin: 0 auto;
+  width: 400px;
+  background-color: antiquewhite;
+  padding: 50px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form textarea{
+    padding: 5px 10px;
+}
+
+.imputField {
+  height: 40px;
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+  outline: none;
+}
+
+.textarea{
+  margin-top: 5px;
+  padding: 5px 10px;
+  border: 0.5px solid black;
+  background: transparent;
+  outline: none;
+}
+
+.inputButton {
+  cursor: pointer;
+  margin-top: 20px;
+  background: transparent;
+  height: 40px;
+}
+
+.inputButton:hover {
+  background: rgba(0, 0, 0, 0.799);
+  color: white;
+}

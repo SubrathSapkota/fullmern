@@ -39,14 +39,17 @@
 }
 
 .heroImg:first-child {
+  position: absolute;
   z-index: 1;
+  left: -380px;
+  top: -150px;
   transform: rotate(28deg);
 }
 
 .heroImg:nth-child(2) {
   position: absolute;
-  top: -50px;
-  left: 210px; /* Adjust this value to your preference for the overlap. */
+  top: -200px;
+  left: -180px; /* Adjust this value to your preference for the overlap. */
   z-index: 2;
   transform: rotate(30deg);
 }
@@ -65,8 +68,13 @@
 }
 
 .oneItem {
-  border: 1px solid rgba(0, 0, 0, 0.212);
-  padding: 40px 50px;
+  border: 2px solid rgb(247, 199, 136);
+  width: 230px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 /* Trending section starts here ----------- */
@@ -110,14 +118,14 @@
   gap: 20px;
 }
 
-.namePrice{
+.namePrice {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.trenImgs{
-  background-color: antiquewhite;
+.trenImgs {
+  background-color: rgba(250, 235, 215, 0.651);
   height: 380px;
   width: 250px;
   display: flex;
@@ -129,8 +137,81 @@
   width: 200px;
 }
 
-.trenImg:hover{
+.trenImg:hover {
   position: absolute;
   z-index: 1;
   width: 450px;
+}
+
+/* best product section  */
+.bestProduct {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.bestProImgs {
+  margin-top: 20px;
+}
+
+.bestProImg {
+  height: 500px;
+  border: 20px solid black;
+  opacity: 0.95;
+}
+
+.bestProImg:hover {
+  opacity: 1;
+  border: 20px solid rgba(0, 0, 0, 0.765);
+}
+
+/* small info about us page */
+.aboutUs {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.aboutText{
+  margin-bottom: 80px;
+}
+
+.aboutText h1 {
+  font-size: 60px;
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+}
+
+.aboutText p {
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+}
+
+.aboutInfo {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  gap: 30px;
+  max-width: 1024px;
+  margin: 0 auto;
+  height: 300px;
+}
+
+.infoBody{
+  padding: 20px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  border-radius: 20px;
+}
+
+.icons{
+  font-size: 5em;
+  margin-left: 50px;
+  color: rgb(66, 55, 55);
 }

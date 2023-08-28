@@ -16,7 +16,9 @@ mongoose
 
 const express = require("express");
 const app = express();
-const PORT = 3000;
+const PORT = 4000;
+const cors = require("cors");
+
 
 // link the router file
 // app.use(require("./router/auth"));
@@ -27,10 +29,15 @@ const PORT = 3000;
 // };
 // middleware();
 
+app.use(cors());
 app.use(express.json());
 
+
 const authRouter = require("./router/auth");
+const messageRouter = require("./router/message");
+
 app.use("/", authRouter);
+app.use("/", messageRouter);
 
 // app.get("/", (req, res) => {
 //   res.send("Hello Home page 1");
